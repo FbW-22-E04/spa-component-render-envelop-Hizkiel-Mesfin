@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 
-export default function Envelope(props) {
+function Envelope(props) {
   console.log(props);
 
   return (
@@ -20,5 +20,18 @@ export default function Envelope(props) {
 
       <div className="stamp">STAMP</div>
     </div>
+  );
+}
+
+export default function Address() {
+  return (
+    <Envelope
+      sedName="Ezekiel"
+      sedAdr="3432 fake str."
+      sedPlace="Neumünster"
+      recName="Musk"
+      recAdr="432 fake str."
+      recPlace="USA"
+    />
   );
 }
