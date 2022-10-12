@@ -1,0 +1,38 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  border: 2px solid;
+  height: 60vh;
+  position: relative;
+  margin: 1rem;
+}
+
+.sender {
+  position: absolute;
+  top: 5%;
+  left: 3%;
+}
+
+.reciver {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
+.stamp {
+  position: absolute;
+  top: 12%;
+  right: 3%;
+  border: 1px solid;
+  padding: 0.5rem;
+  font-weight: bold;
+  font-size: 2.5rem;
+  transform: rotate(45deg);
+  background-color: antiquewhite;
+}
