@@ -2,20 +2,19 @@ import React from "react";
 import "./App.css";
 
 function Envelope(props) {
-  console.log(props);
-
+  const { sedName, sedAdr, sedPlace, recName, recAdr, recPlace } = props;
   return (
     <div className="container">
       <div className="sender">
-        <p> {props.sedName} </p>
-        <p> {props.sedAdr} </p>
-        <p> {props.sedPlace} </p>
+        <p> {sedName} </p>
+        <p> {sedAdr} </p>
+        <p> {sedPlace} </p>
       </div>
 
       <div className="reciver">
-        <p> {props.recName} </p>
-        <p> {props.recAdr} </p>
-        <p> {props.recPlace} </p>
+        <p> {recName} </p>
+        <p> {recAdr} </p>
+        <p> {recPlace} </p>
       </div>
 
       <div className="stamp">STAMP</div>
